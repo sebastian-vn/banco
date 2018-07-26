@@ -1,0 +1,98 @@
+@font-face {
+  font-family: checfont1;
+  src: url("../fonts/VAGRoundedStd-Light.otf");
+}
+
+body {
+  font-family: checfont1;
+}
+
+h1,
+h3 {
+  font-family: checfont1;
+}
+
+h1 {
+  font-size: 5em;
+  color: #ffffff;
+}
+
+.navegacion {
+  height: 7em;
+}
+
+.cell {
+  text-align: center;
+}
+
+#img-fondo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("../img/main-fondo.jpg");
+  background-size: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  /*   border-bottom-left-radius: 300% 500px;
+  border-bottom-right-radius: 300% 500px; */
+}
+
+.navegacion-div {
+  margin-top: 2em;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.78);
+}
+
+.sub-navegacion {
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.sub-navegacion:hover{
+  box-shadow: 0px 0px 5px 0px rgba(31, 129, 6, 0.9);
+}
+
+/* Sidebar */
+.sidenav {
+  height: 100%;
+  width: 380px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Img sidenav */
+.sidebar{
+  height: 3em;
+}

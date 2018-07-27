@@ -2,7 +2,6 @@ $(function() {
   $(document).foundation();
   setMainHeight();
   getNavs();
-  $("#side").css("display", "none");
 });
 
 function setMainHeight() {
@@ -25,8 +24,9 @@ function cambioImg() {
 $(".sub-navegacion").hover(cambioImg, cambioImg);
 
 $(".sub-navegacion").click(function() {
-  $("#main").addClass("animated slideOutLeft");
+  var link = $(this).children().attr('alt');
+  $("#main").addClass("animated fadeOut");
   setTimeout(function() {
-    $("#main").css("display", "none");
+    location.href = String(link);
   }, 1000);
 });

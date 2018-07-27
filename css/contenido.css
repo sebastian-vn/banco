@@ -1,3 +1,8 @@
+@font-face {
+  font-family: checfont1;
+  src: url("../fonts/VAGRoundedStd-Light.otf");
+}
+
 /* Sidebar */
 .sidenav {
   height: 100%;
@@ -6,21 +11,26 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #253611;
   overflow-x: hidden;
   padding-top: 20px;
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.43);
 }
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
+  transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #fff;
+  background-color: rgba(78, 161, 9, 0.6);
 }
 
 .main {
@@ -30,15 +40,30 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* Img sidenav */
-.sidebar{
+.sidebar {
   height: 3em;
 }
 
-#nav{
+#nav {
   padding-left: 380px;
+}
+
+.top-bar {
+  background-color: rgba(78, 161, 9, 0.8  );
+  font-family: checfont1;
+}
+
+#img-sidebar {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4em;
 }

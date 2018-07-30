@@ -93,7 +93,7 @@ div#generalidades {
   border-width: 1.1px;
   border-color: grey;
   border-radius: 5px;
-  background-image: url(../img/generalidades-fondo.png);
+/*   background-image: url(../img/bombillo.jpg); */
   background-size: cover;
 }
 
@@ -151,6 +151,7 @@ button#generalidades-button {
 
 button#generalidades-button:hover {
   border-color: white;
+  background-color: #253611 !important;
   color: white;
 }
 
@@ -193,8 +194,12 @@ div#main_glosario{
 }
 
 div#content-glosario{
+  display: flex;
   width: 100%;
-  background-color: rgba(26, 125, 23, 0.5);
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+ /*  background-color: rgba(26, 125, 23, 0.5); */
 }
 
 .tabs{
@@ -216,22 +221,67 @@ div#recursos{
   border-width: 1.1px;
   border-color: grey;
   border-radius: 5px;
-  background-image: url(../img/generalidades-fondo.png);
+/*   background-image: url(../img/bombillo.jpg); */
   background-size: cover;
 }
 
-button#recursos-button{
-  background-color: #253611;
-  color: #fff;
+button.recursos-button{
+  background-color: #253611 !important;
+  color: #fff !important ;
   width: 50%;
   transition: 0.3s;
   align-self: center;
   font-family: checfont1;
+  border-color: black;
 }
 
-button#recursos-button:hover{
-  background-color: #92c849;
-  color: #000;
+button.recursos-button:hover{
+  background-color: #92c849 !important;
+  color: #000 !important;
+  border-color: transparent;
+}
+
+div #subir-archivo.reveal{
+  font-family: checfont1;
+  padding: 0;
+  text-align: center;
+}
+
+#label-nombre_archivo{
+  text-transform: uppercase;
+}
+
+div#my-form{
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: rgba(26, 125, 23, 0.5);
+  margin: 10px;
+}
+
+div#header-modal{
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  flex-direction: column;
+  width: 100%;
+  color: #fff; 
+  height: 53px;
+  background-color: #253611;
+}
+
+#button-subir{
+  background-color: #253611 !important;
+  color: #fff !important ;
+  width: 50%;
+  transition: 0.3s;
+  align-self: center;
+  font-family: checfont1;
+  border-color: transparent !important;
+}
+
+#button-subir:hover{
+  background-color: #92c849 !important;
+  color: #000 !important;
   border-color: transparent;
 }
 

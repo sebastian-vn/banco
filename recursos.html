@@ -54,48 +54,79 @@
     <div id="main_generalidades">
       <div id="recursos">
         <div class="tab-recursos">
-          <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
-            <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">Documentos</a></li>
-            <li class="tabs-title"><a href="#panel2c">Vídeos</a></li>
-            <li class="tabs-title"><a href="#panel3c">Imágenes</a></li>
-            <li class="tabs-title"><a href="#panel4c">Presentaciones</a></li>
-            <li class="tabs-title"><a href="#panel5c">Juego</a></li>
-            <li class="tabs-title"><a href="#panel6c">Manuales</a></li>
+          <ul class="tabs" data-deep-link data-active-collapse="true" data-tabs id="collapsing-tabs">
+            <li class="tabs-title is-active">
+              <a href="#documentos" aria-selected="true">Documentos</a>
+            </li>
+            <li class="tabs-title">
+              <a href="#videos">Vídeos</a>
+            </li>
+            <li class="tabs-title">
+              <a href="#imagenes">Imágenes</a>
+            </li>
+            <li class="tabs-title">
+              <a href="#presentaciones">Presentaciones</a>
+            </li>
+            <li class="tabs-title">
+              <a href="#juego">Juego</a>
+            </li>
+            <li class="tabs-title">
+              <a href="#manuales">Manuales</a>
+            </li>
           </ul>
-        
+
           <div class="tabs-content" data-tabs-content="collapsing-tabs">
-            <div class="tabs-panel is-active" id="panel1c">
-              <p>Aún no se cargan documentos en el módulo de Glosario.</p>
+            <div class="tabs-panel is-active" id="documentos">
+              <p>Aún no se cargan documentos en el módulo de Documentos.</p>
             </div>
-            <div class="tabs-panel" id="panel2c">
-              <p>Aún no se cargan documentos en el módulo de Adicionales.</p>
-            </div>  
-            <div class="tabs-panel" id="panel3c">
-              <p>Aún no se cargan documentos en el módulo de Adicionales.</p>
-            </div>  
-            <div class="tabs-panel" id="panel4c">
-              <p>Aún no se cargan documentos en el módulo de Adicionales.</p>
-            </div>  
-            <div class="tabs-panel" id="panel5c">
-              <p>Aún no se cargan documentos en el módulo de Adicionales.</p>
-            </div>  
-            <div class="tabs-panel" id="panel6c">
-              <p>Aún no se cargan documentos en el módulo de Adicionales.</p>
-            </div>  
+            <div class="tabs-panel" id="videos">
+              <p>Aún no se cargan documentos en el módulo de Vídeos.</p>
+            </div>
+            <div class="tabs-panel" id="imagenes">
+              <p>Aún no se cargan documentos en el módulo de Imágenes.</p>
+            </div>
+            <div class="tabs-panel" id="presentaciones">
+              <p>Aún no se cargan documentos en el módulo de Presentaciones.</p>
+            </div>
+            <div class="tabs-panel" id="juego">
+              <p>Aún no se cargan documentos en el módulo de Juego.</p>
+            </div>
+            <div class="tabs-panel" id="manuales">
+              <p>Aún no se cargan documentos en el módulo de Manuales.</p>
+            </div>
           </div>
         </div>
 
-        <button id="recursos-button" class="hollow button" data-open="exampleModal1">Subir Recurso</button>
+        <button class="hollow button recursos-button" data-open="subir-archivo">Subir Recurso</button>
       </div>
 
       <!-- MODAL -->
-      <div class="reveal" id="exampleModal1" data-reveal>
-        <h1>Awesome. I Have It.</h1>
-        <p class="lead">Your couch. It is mine.</p>
-        <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="reveal animated fadeInDown" id="subir-archivo" data-reveal>
+        <div id="header-modal">
+          Cargar Archivo
+        </div>
+        <div id="my-form">
+          <form>
+            <div class="grid-container">
+              <div class="grid-x grid-padding-x">
+                <div class="medium-12 cell">
+                </div>
+              </div>
+            </div>
+            <label>¿A qué modúlo desea subir el archivo?
+              <select>
+              </select>
+            </label>
+            <label id="button-subir" for="button-subir_recurso" class="button">Seleccionar Archivo</label>
+            <input id="button-subir_recurso" type="file" class="show-for-sr" multiple>
+
+            <button id="generalidades-button" class="hollow button" href="#">Cargar Recursos</button>
+          </form>
+
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

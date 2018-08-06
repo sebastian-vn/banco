@@ -6,3 +6,4 @@ $(function(){
 function load(){
   $('body').addClass('animated fadeIn');
 }
+

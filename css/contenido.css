@@ -24,6 +24,10 @@ body {
   box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.43);
 }
 
+div.grid-y{
+  height: 93.46% !important;
+}
+
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -279,6 +283,32 @@ div#header-modal{
   background-color: #92c849 !important;
   color: #000 !important;
   border-color: transparent;
+}
+
+div#download_test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: #253611;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+div#download_test:hover{  
+  background-color: grey;
+}
+
+a#a-download{
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+i{
+  font-size: 60px;
+  color: white;
 }
 
 /* @MEDIA QUERYS*/

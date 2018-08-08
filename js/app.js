@@ -2,6 +2,8 @@ $(function() {
   $(document).foundation();
   setMainHeight();
   getNavs();
+
+  $(".sub-navegacion").hover(cambioImg, cambioImg);
 });
 
 function setMainHeight() {
@@ -21,8 +23,7 @@ function cambioImg() {
   $this.attr("src", newSource);
 }
 
-$(".sub-navegacion").hover(cambioImg, cambioImg);
-
+/* ONCLICKS */
 $(".sub-navegacion").click(function() {
   var link = $(this).children().attr('alt');
   $("#main").addClass("animated fadeOut");

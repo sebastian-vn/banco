@@ -11,7 +11,7 @@ body {
 /* Sidebar */
 .sidenav {
   height: 100%;
-  width: 380px; 
+  width: 380px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -24,7 +24,7 @@ body {
   box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.43);
 }
 
-div.grid-y{
+div.grid-y {
   height: 93.46% !important;
 }
 
@@ -96,7 +96,7 @@ div#generalidades {
   border-width: 1.1px;
   border-color: grey;
   border-radius: 5px;
-/*   background-image: url(../img/bombillo.jpg); */
+  /*   background-image: url(../img/bombillo.jpg); */
   background-size: cover;
 }
 
@@ -144,6 +144,15 @@ p {
   padding: 5px;
 }
 
+.p-card {
+  font-size: 18px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 5px;
+  align-self: center;
+}
+
 button#generalidades-button {
   border-color: #000;
   color: #000;
@@ -155,63 +164,63 @@ button#generalidades-button:hover {
   color: white;
 }
 
-.accordion{
+.accordion {
   border-radius: 5px;
   background-color: #595959cc;
   font-size: 1em;
 }
 
-.accordion-title{
+.accordion-title {
   color: #fff;
   transition: 0.3s;
 }
 
-.accordion-title:hover{
+.accordion-title:hover {
   color: green;
 }
 
-.accordion-content{
+.accordion-content {
   text-align: center;
 }
 
-button#criterios-button{
+button#criterios-button {
   border-color: #253611;
   color: #253611;
   transition: 0.3s;
   font-family: checfont1;
 }
 
-button#criterios-button:hover{
+button#criterios-button:hover {
   color: #fff;
   background-color: #253611;
 }
 
-div#main_glosario{
+div#main_glosario {
   width: 100%;
   height: 100%;
   padding-left: 380px;
   padding-top: 55px;
 }
 
-div#content-glosario{
+div#content-glosario {
   display: flex;
   width: 100%;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
- /*  background-color: rgba(26, 125, 23, 0.5); */
+  /*  background-color: rgba(26, 125, 23, 0.5); */
 }
 
-.tabs{
+.tabs {
   font-family: checfont1;
   transition: 0.3s;
 }
 
-.tabs-content{
+.tabs-content {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-div#recursos{
+div#recursos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -221,11 +230,11 @@ div#recursos{
   border-width: 1.1px;
   border-color: grey;
   border-radius: 5px;
-/*   background-image: url(../img/bombillo.jpg); */
+  /*   background-image: url(../img/bombillo.jpg); */
   background-size: cover;
 }
 
-button.recursos-button{
+button.recursos-button {
   background-color: #253611 !important;
   color: #fff !important ;
   width: 50%;
@@ -235,41 +244,41 @@ button.recursos-button{
   border-color: black;
 }
 
-button.recursos-button:hover{
+button.recursos-button:hover {
   background-color: #92c849 !important;
   color: #000 !important;
   border-color: transparent;
 }
 
-div #subir-archivo.reveal{
+div #subir-archivo.reveal {
   font-family: checfont1;
   padding: 0;
   text-align: center;
 }
 
-#label-nombre_archivo{
+#label-nombre_archivo {
   text-transform: uppercase;
 }
 
-div#my-form{
+div#my-form {
   padding: 2rem;
   border-radius: 5px;
   background-color: rgba(26, 125, 23, 0.5);
   margin: 10px;
 }
 
-div#header-modal{
+div#header-modal {
   display: flex;
   justify-content: center;
   font-size: 2em;
   flex-direction: column;
   width: 100%;
-  color: #fff; 
+  color: #fff;
   height: 53px;
   background-color: #253611;
 }
 
-#button-subir{
+#button-subir {
   background-color: #253611 !important;
   color: #fff !important ;
   width: 50%;
@@ -279,13 +288,13 @@ div#header-modal{
   border-color: transparent !important;
 }
 
-#button-subir:hover{
+#button-subir:hover {
   background-color: #92c849 !important;
   color: #000 !important;
   border-color: transparent;
 }
 
-div#download_test{
+div#download_test {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -296,19 +305,54 @@ div#download_test{
   transition: 0.3s;
 }
 
-div#download_test:hover{  
+div#download_test:hover {
   background-color: grey;
 }
 
-a#a-download{
-  text-align: center;
-  height: 100%;
+i {
+  font-size: 60px;
+}
+
+.tabs-panel.is-active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  flex-grow: 0;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  width: 280px;
+  height: 12em;
+  margin: 10px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+div#main-herramientas {
   width: 100%;
 }
 
-i{
-  font-size: 60px;
-  color: white;
+div#filtros-herramientas {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+div#ficheros-display {
+  width: 100%;
+}
+
+div#area-ficheros {
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* @MEDIA QUERYS*/

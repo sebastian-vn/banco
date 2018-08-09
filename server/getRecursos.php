@@ -3,8 +3,8 @@ include 'lib.php';
 
 $api = new geBanco();
 
-if (isset($_POST['id_recurso'])) {
-    $json = $api->getRecursos($_POST['id_recurso']);
+if (isset($_POST)) {
+    $json = $api->getRecursos();
 } else {
     $json = "No se recibieron los datos adecuados";
 }

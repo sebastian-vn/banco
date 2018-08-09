@@ -31,7 +31,7 @@ class geBanco
         }
     }
 
-    public function getRecursos($id_recurso){
-      return getRecursosQuery($this->con, $id_recurso);
+    public function getRecursos(){
+        return getRecursosQuery($this->con);
     }
 }

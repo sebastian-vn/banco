@@ -20,7 +20,6 @@ function getRecursos() {
       response.forEach((element, index) => {
         var htmlString = "";
         var myElement = response[index];
-        console.log(myElement.id_recurso);
         $('#'+ myElement.id_recurso +'').append(
           '<a id="a-download" href="' + response[index].concat + '" download>' +
             '<div class="card">' + 

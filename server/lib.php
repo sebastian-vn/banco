@@ -34,4 +34,20 @@ class geBanco
     public function getRecursos(){
         return getRecursosQuery($this->con);
     }
+
+    public function getFicheros($competencia, $tema, $zona){
+        return getFicherosQuery($this->con, $competencia, $tema, $zona);
+    }
+
+    public function getCompetencias(){
+        return getCompetenciasQuery($this->con);
+    }
+
+    public function getTemas($competencia){
+      return getTemasQuery($this->con, $competencia);
+    }
+
+    public function getZonas(){
+      return getZonasQuery($this->con);
+    }
 }

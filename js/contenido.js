@@ -1,8 +1,6 @@
 $(function() {
   /* FOUNDATION */
   $(document).foundation();
-
-  
 });
 
 function load() {

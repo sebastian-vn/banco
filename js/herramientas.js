@@ -9,11 +9,12 @@ function load() {
 }
 
 $('#competencia').change(function(){
-  var value = $('#competencia').val();
-  getTemas(value);
+  var competencia = $('#competencia').val();
+  getTemas(competencia);
 });
 
 function getCompetencias(){
+  $('#competencia').html('<option value="0" >Seleccione</option>');
   $.ajax({
     type: "POST",
     url: "server/getCompetencias.php",
@@ -30,6 +31,7 @@ function getCompetencias(){
 }
 
 function getZonas(){
+  $('#zona').html('<option value="0" >Seleccione</option>');
   $.ajax({
     type: "POST",
     url: "server/getZonas.php",
@@ -46,15 +48,18 @@ function getZonas(){
 }
 
 function getTemas(competencia){
+  $('#tema').html('<option value="0" >Seleccione</option>');
   $.ajax({
     type: "POST",
-    url: "server/getZonas.php",
-    data: "",
+    url: "server/getTemas.php",
+    data: {
+      competencia : competencia
+    },
     dataType: "json",
     success: function(response){
       response.forEach(element => {
-        $('#zona').append(
-          `<option value="${element.id_zonas}"> ${element.zonas} </option>`
+        $('#tema').append(
+          `<option value="${element.id_temas}"> ${element.temas} </option>`
         );
       });
     }

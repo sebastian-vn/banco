@@ -22,8 +22,10 @@ function getCompetencias(){
     dataType: "json",
     success: function(response){
       response.forEach(element => {
+        var comp = element.competencia;
+        var first = comp.charAt();
         $('#competencia').append(
-          `<option value="${element.id_competencia}"> ${element.competencia} </option>`
+          `<option value="${element.id_competencia}"> ${first} - ${element.competencia} </option>`
         );
       });
     }
@@ -40,7 +42,7 @@ function getZonas(){
     success: function(response){
       response.forEach(element => {
         $('#zona').append(
-          `<option value="${element.id_zonas}"> ${element.zonas} </option>`
+          `<option value="${element.id_zona}"> Z${element.id_zona} - ${element.zonas} </option>`
         );
       });
     }
@@ -59,7 +61,7 @@ function getTemas(competencia){
     success: function(response){
       response.forEach(element => {
         $('#tema').append(
-          `<option value="${element.id_temas}"> ${element.temas} </option>`
+          `<option value="${element.id_temas}"> ${element.id_temas} - ${element.temas} </option>`
         );
       });
     }
